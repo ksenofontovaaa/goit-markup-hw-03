@@ -15,6 +15,45 @@ body {
     text-decoration: none;
 }
 
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.header > .container {
+    display: flex;
+}
+
+.header-logo-first, .header-logo-sec {
+    display: flex;
+    align-items: center;
+}
+
+.header-site-list, .header-contact-list {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.header-contact-list {
+    margin-left: auto;
+}
+
+.header {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #ECECEC;
+}
+
 .header-logo-first, .header-logo-sec {
     font-family: 'Raleway', sans-serif;
     font-style: normal;
@@ -27,8 +66,13 @@ body {
  color: #2196F3;
 }
 
+.header-logo-sec {
+    margin-right: 93px;
+}
+
 .header-site-link, .header-contact-link   {
     font-size: 14px;
+    font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: #212121;
@@ -46,17 +90,36 @@ body {
     color: #2196F3;
     }
 
+.main > .container {
+    display: flex;
+}
+
 .banner {
     background-color: #2F303A;
 }
+
+.bancontent {
+    padding: 200px 257px;
+    align-items: center;
+}
+
 .banner-title {
+    max-width: 696px;
     font-size: 44px;
     line-height: 1.36;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--first-title-color);
+    margin-bottom: 30px;
 }
+
+.banner-click {
+    border-radius: 4px;
+    border: none;
+    align-items: center;
+}
+
 .banner-click {
     font-family: inherit;
     font-size: 16px;
@@ -64,6 +127,12 @@ body {
     color: #FFFFFF;
     cursor: pointer;
     background-color: #2196F3;    
+    min-width: 200px;
+    height: 50px;
+}
+
+.benefits-item:not(:last-child), .work-item:not(:last-child), .workers-item:not(:last-child) {
+    margin-right: 30px;
 }
 
 .benefits-title {
@@ -73,6 +142,8 @@ body {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #212121;
+
+    margin-bottom: 10px;
 }
 .benefits-description {
     font-weight: 400;
@@ -88,10 +159,16 @@ body {
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--second-title-color);
+
+    margin-bottom: 50px;
     }
 
 .workers {
     background-color: #F5F4FA;
+}
+
+.workers-list{
+    padding: 0 0 30px;
 }
 .workers-title {
     font-weight: 700;
@@ -100,6 +177,8 @@ body {
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--second-title-color);
+
+    margin-bottom: 50px;
 }
 
 .worker-name {
@@ -108,13 +187,18 @@ body {
     text-align: center;
     letter-spacing: 0.03em;
     color: #212121;
+
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
+
 .worker-position {
     font-size: 16px;
     line-height: 1.18;
     text-align: center;
     letter-spacing: 0.03em;
     color: #757575;
+    /* margin-bottom: 10px; */
 }
 
 
@@ -149,6 +233,8 @@ body {
 
 .footer {
     background-color: #2F303A;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .footer-logo-first, .footer-logo-sec {
@@ -158,6 +244,8 @@ body {
     line-height: 1.19;
     letter-spacing: 0.03em;
     color: #FFFFFF;
+
+    margin-bottom: 10px;
 }
 
 .footer-logo-first {
