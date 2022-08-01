@@ -39,29 +39,10 @@ ul {
     padding-bottom: 94px;
 }
 
+
 .header > .container {
     display: flex;
     align-items: center; 
-}
-
-.header-logo-first, .header-logo-sec { 
-    display: flex;
-    align-items: center;
-    margin-right: 93px;
-}
-
-
-.header-site-list, .header-contact-list {
-    display: flex;
-    
-    gap: 50px;
-}
-
-
-
-
-.header-contact-list {
-    margin-left: auto;
 }
 
 .header {
@@ -70,21 +51,40 @@ ul {
     border-bottom: 1px solid #ECECEC;
 }
 
+.head-navigation {
+    display: flex;
+    align-items: center;
+}
+
 .header-logo-first, .header-logo-sec {
+    display: inline-block;
+    align-items: center;
+    margin-right: 93px;
+
     font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 26px;
     line-height: 31px;
     color: black;
-    margin-right: 93px;
+
 }
 .header-logo-first{
- color: #2196F3;
+    color: #2196F3;
 }
 
-.header-logo-sec {
-    margin-right: 93px;
+.header-site-list, .header-contact-list {
+    display: flex;
+    
+    gap: 50px;
+}
+
+..header-site-list {
+    margin-left: 9px;
+}
+
+.header-contact-list {
+    margin-left: auto;
 }
 
 .header-site-link, .header-contact-link   {
@@ -105,7 +105,8 @@ ul {
 
 .header-contact-link:hover, .header-contact-link:focus {
     color: #2196F3;
-    }
+    } 
+
 
 .main > .container {
     display: flex;
@@ -307,6 +308,8 @@ ul {
     display: flex;
     flex-wrap: wrap;
     margin: -15px;
+
+    gap: 30px;
 }
 
 .all-item {
@@ -349,7 +352,10 @@ ul {
     padding-bottom: 60px;
 }
 
+
+
 .footer-logo-first, .footer-logo-sec {
+    display: inline-block;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
@@ -357,12 +363,13 @@ ul {
     letter-spacing: 0.03em;
     color: #FFFFFF;
 
-    /*---------- margin-bottom: 20px;---------- */
+    
 }
 
 .footer-logo-first {
     color: #2196F3;
     
+    margin-bottom: 20px;
 }
 
 
@@ -373,6 +380,7 @@ ul {
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
+
 }
 
 .footer-contact-item:not(:last-child) {
