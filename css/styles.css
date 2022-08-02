@@ -79,7 +79,7 @@ ul {
     gap: 50px;
 }
 
-..header-site-list {
+.header-site-list {
     margin-left: 9px;
 }
 
@@ -217,7 +217,7 @@ ul {
     justify-content: center;
     }
 
- .workers-list{
+.workers-list{
     display: flex;
             
 }
@@ -307,13 +307,14 @@ ul {
 .all-labors {
     display: flex;
     flex-wrap: wrap;
-    margin: -15px;
+    /* margin: -15px; */
 
     gap: 30px;
 }
 
 .all-item {
-    width: calc(100% / 3 - 30px);
+    /* width: calc(100% / 3 - 30px); */
+    width: 370px;
 
 }
 
@@ -345,13 +346,9 @@ ul {
 
 .footer {
     background-color: #2F303A;
-}
-
-.footer > .container {
     padding-top: 60px;
     padding-bottom: 60px;
 }
-
 
 
 .footer-logo-first, .footer-logo-sec {
